@@ -1,0 +1,175 @@
+{
+    "datapkl": {
+        "tb_elektronika": [
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "621.38",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201711014",
+                "nama_mahasiswa": "Sindy",
+                "judul_laporan_pkl": "MONITORING FREKUENSI SELULER(UNIT PELAKSANAAN TEKNISI) LINGKUNGAN DIREKTORIAT JENDRAL POS DAN TELEKOMUNIKASI",
+                "nama_dosen_pembimbing": "Medi Yuwono Tharam,ST.,MT",
+                "nama_tempat_pelaksanaan": "INSTALASI UPT(UNIT PELAKSANAAN TEKNIS) LINGKUNGAN DIREKTORIAT JENDRAL POS DAN TELEKOMUNIKASI",
+                "kabupaten_kota": "KOTA PONTIANAK"
+            },
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "621.81",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201711020",
+                "nama_mahasiswa": "Andre",
+                "judul_laporan_pkl": "PEMBONGKARAN DAN PERBAIKAN POMPA SENTRIFUGAL",
+                "nama_dosen_pembimbing": "Widdo Arifin,ST.,MT",
+                "nama_tempat_pelaksanaan": "PDAM TIRTHA KHATULISTIWA PONTIANAK",
+                "kabupaten_kota": "KOTA PONTIANAK"
+            },
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "629.7",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201711041",
+                "nama_mahasiswa": "Dwi Siswanto",
+                "judul_laporan_pkl": "PENGENALAN PEMOGRAMAN HOLLYSYS DISTRIBUTED CONTROL SYSTEM MACS V5.2.4",
+                "nama_dosen_pembimbing": "Eko Mardianto,SST.,MT",
+                "nama_tempat_pelaksanaan": "PT INDONESIA CHEMICAL ALUMINA",
+                "kabupaten_kota": "KABUPATEN SANGGAU"
+            },
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "621.88",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201711073",
+                "nama_mahasiswa": "Yufli Adria Yugis",
+                "judul_laporan_pkl": "PEMELIHARAAN PREVENTIF, PERIODIK DAN KOREKTIF PADA MOTOR LISTRIK DI ULPTP/G SIANTAN",
+                "nama_dosen_pembimbing": "Agus Riyanto,ST.,MT",
+                "nama_tempat_pelaksanaan": "ULPTP/G SIANTAN",
+                "kabupaten_kota": "PONTIANAK"
+            },
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "629.8",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201713028",
+                "nama_mahasiswa": "Khalis Rasis",
+                "judul_laporan_pkl": "SISTEM WWTP(WASTEWATER TREATMENT PLANT)",
+                "nama_dosen_pembimbing": "Hasan,ST.,MT",
+                "nama_tempat_pelaksanaan": "PT INDOFOOD CBP SUKSES MAKMUR Tbk",
+                "kabupaten_kota": "KOTA PONTIANAK UTARA"
+            }
+        ],
+        "tb_informatika": [
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "005.3",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201816014",
+                "nama_mahasiswa": "Gusti Damara",
+                "judul_laporan_pkl": "PENGGUNAAN APLIKASI KOMPUTERISASI KEGIATAN PERTAHANAN (KPP)",
+                "nama_dosen_pembimbing": "Yasir Arafat,S.ST.,MT",
+                "nama_tempat_pelaksanaan": "KANTOR PERTAHANAN",
+                "kabupaten_kota": "KABUPATEN KUBU RAYA"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "005.4",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201816029",
+                "nama_mahasiswa": "Yanti Novitasari",
+                "judul_laporan_pkl": "PENGGUNAAN APLIKASI SIBEJI",
+                "nama_dosen_pembimbing": "Irwan Suharto,S.T.,MT",
+                "nama_tempat_pelaksanaan": "DINAS KOMUNIKASI DAN INFORMASI",
+                "kabupaten_kota": "KABUPATEN SINTANG"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "005.36",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201816066",
+                "nama_mahasiswa": "Rizky Pratama Syahrul Ramadhan",
+                "judul_laporan_pkl": "RANCANG BANGUN SISTEM INFORMATIKA PENGARSIPAN SURAT BERBASIS WEB",
+                "nama_dosen_pembimbing": "Budianingsih,S.T.,M.T",
+                "nama_tempat_pelaksanaan": "UMUM DAN APARATUR DINAS PENDIDIKAN DAN KEBUDAYAAN",
+                "kabupaten_kota": "KOTA PONTIANAK"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "006.7",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201816067",
+                "nama_mahasiswa": "Ryan Maghribie",
+                "judul_laporan_pkl": "PENGOLAHAN GAMBAR DAN VIDEO DI DISKOMINFO",
+                "nama_dosen_pembimbing": "Tri Bowo Atmojo,S.T.,M.Cs",
+                "nama_tempat_pelaksanaan": "DINAS KOMUNIKASI DAN INFORMASI KOTA PONTIANAK",
+                "kabupaten_kota": "KOTA PONTIANAK"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "006.5",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201816084",
+                "nama_mahasiswa": "Ahmad Tuflihun",
+                "judul_laporan_pkl": "PENGGUNAAN AMAZON WEB SERVICES DAN FRAMEWORK-FRAME UNTUK MEMBUAT WEBSITE VIRTUAL TOUR NU SKIN",
+                "nama_dosen_pembimbing": "Wawan Heryawan,ST,.MT",
+                "nama_tempat_pelaksanaan": "CV.ULMITA SOLUSI DIGITAL",
+                "kabupaten_kota": "KOTA PONTIANAK"
+            }
+        ],
+        "tb_listrik": [
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "621.319",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201703038",
+                "nama_mahasiswa": "Arif Setiawan",
+                "judul_laporan_pkl": "PEMASANGAN LAMPU JALAN UMUM(PJU)",
+                "nama_dosen_pembimbing": "Ir.H.Syarif Agus Salim,MT",
+                "nama_tempat_pelaksanaan": "PT.PRIMA ELECTRIK KHATULISTIWA",
+                "kabupaten_kota": "JL.KOMYOS SUDARSO GANG TIMUN 1 NO.27 KEL. SUNGAI JAWI LUAR KEC.PONTIANAK BARAT"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "621.46",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201703045",
+                "nama_mahasiswa": "Dimas Aditya Pratama",
+                "judul_laporan_pkl": "PERAWATAN MOTOR INDUKSI 3 PHASA DENGAN MENGGUNAKAN ALAT KHUSUS",
+                "nama_dosen_pembimbing": "Ir.Abu Bakar,MT",
+                "nama_tempat_pelaksanaan": "CHEMICAL ALUMINA DUSUN PIASAK, DESA PEDALAMAN",
+                "kabupaten_kota": "KEC TAYAN HILIR"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "621.3",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201703051",
+                "nama_mahasiswa": "Destu Aji",
+                "judul_laporan_pkl": "ELECTROSTATIC PRECIPITATOR(ESP) UNTUK SISTEM PENGATURAN",
+                "nama_dosen_pembimbing": "Wawan Heryawan,ST,MT",
+                "nama_tempat_pelaksanaan": "PLTU-3 PARIT BARU SITE BENGKAYANG",
+                "kabupaten_kota": "BENGKAYANG"
+            },
+            {
+                "letak_buku_pkl": "PKL TPHP 1027",
+                "arsip_laporan_pkl": "621.34",
+                "tahun_pelaksanaan": 2020,
+                "nim": "3201703065",
+                "nama_mahasiswa": "Dimas Aditya Pratama",
+                "judul_laporan_pkl": "INDUKSI MOTOR 3 PHASA",
+                "nama_dosen_pembimbing": "Ir.Abu Bakar,MT",
+                "nama_tempat_pelaksanaan": "PT.PLN(PERSERO) AREA SINGKAWANG",
+                "kabupaten_kota": "SINGKAWANG"
+            },
+            {
+                "letak_buku_pkl": "TA ARSITEKTUR 2016",
+                "arsip_laporan_pkl": "621.83",
+                "tahun_pelaksanaan": 2021,
+                "nim": "3201803009",
+                "nama_mahasiswa": "Khairul Abidin",
+                "judul_laporan_pkl": "PENGGANTIAN BEARING MOTOR PERUMDA AIR MINUM GUNUNG POTENG",
+                "nama_dosen_pembimbing": "Ir.Rusman,MT",
+                "nama_tempat_pelaksanaan": "PERUMDA",
+                "kabupaten_kota": "KOTA SINGKAWANG"
+            }
+        ]
+    }
+}

@@ -49,7 +49,8 @@ def hapus_buku(data, kategori, judul_buku):
     return data
 
 # Nama file JSON
-nama_file = r"C:\Users\Lenovo\Documents\Kuliah\Semester 2\New folder\jsonadde.json"
+nama_file = "jsonadde.json"
+
 
 # Membaca data dari file JSON
 data_perpustakaan = baca_data_dari_file(nama_file)

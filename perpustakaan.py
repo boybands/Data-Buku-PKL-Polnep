@@ -230,24 +230,39 @@ else:
             tempat_pelaksanaan = st.text_input("Nama Tempat Pelaksanaan", help="Nama tempat pelaksanaan PKL")
             kabupaten_kota = st.text_input("Kabupaten/Kota", help="Nama kabupaten atau kota tempat PKL")
             
-            if st.form_submit_button("Tambah Buku"):
-                if judul and letak and arsip and nim and nama_mahasiswa:
+                        if st.form_submit_button("Tambah Buku"):
+            # Validasi data
+                errors = []
+                if not judul.strip():
+                    errors.append("Judul laporan PKL tidak boleh kosong.")
+                if not arsip.strip():
+                    errors.append("Arsip laporan PKL tidak boleh kosong.")
+                if not nim.isdigit():
+                    errors.append("NIM harus berupa angka.")
+                if not nama_mahasiswa.replace(" ", "").isalpha():
+                    errors.append("Nama Mahasiswa hanya boleh terdiri dari huruf dan spasi.")
+                if not dosen_pembimbing.replace(" ", "").isalpha():
+                    errors.append("Nama Dosen Pembimbing hanya boleh terdiri dari huruf dan spasi.")
+                if not kabupaten_kota.strip():
+                    errors.append("Kabupaten/Kota tidak boleh kosong.")
+
+                if errors:
+                    for error in errors:
+                        st.error(error)
+                else:
+                    # Data valid, simpan buku baru
                     buku_baru = {
-                        'judul_laporan_pkl': judul,
-                        'letak_buku_pkl': letak,
-                        'arsip_laporan_pkl': arsip,
+                        'judul_laporan_pkl': judul.strip(),
+                        'arsip_laporan_pkl': arsip.strip(),
                         'tahun_pelaksanaan': tahun,
-                        'nim': nim,
-                        'nama_mahasiswa': nama_mahasiswa,
-                        'nama_dosen_pembimbing': dosen_pembimbing,
-                        'nama_tempat_pelaksanaan': tempat_pelaksanaan,
-                        'kabupaten_kota': kabupaten_kota
+                        'nim': nim.strip(),
+                        'nama_mahasiswa': nama_mahasiswa.strip(),
+                        'nama_dosen_pembimbing': dosen_pembimbing.strip(),
+                        'kabupaten_kota': kabupaten_kota.strip()
                     }
                     data_perpustakaan = Tambah_Buku(data_perpustakaan, kategori_baru, buku_baru)
                     simpan_data_ke_file(nama_file, data_perpustakaan)
                     st.success(f"Buku '{judul}' berhasil ditambahkan!")
-                else:
-                    st.error("Harap isi semua kolom yang diperlukan.")
     
     elif pilihan_fitur == "Hapus Buku" and st.session_state.role == "admin":
         st.subheader("Hapus Buku")

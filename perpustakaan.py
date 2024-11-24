@@ -230,7 +230,7 @@ else:
             tempat_pelaksanaan = st.text_input("Nama Tempat Pelaksanaan", help="Nama tempat pelaksanaan PKL")
             kabupaten_kota = st.text_input("Kabupaten/Kota", help="Nama kabupaten atau kota tempat PKL")
             
-                        if st.form_submit_button("Tambah Buku"):
+            if st.form_submit_button("Tambah Buku"):
             # Validasi data
                 errors = []
                 if not judul.strip():

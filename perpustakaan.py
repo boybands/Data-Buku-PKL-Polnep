@@ -192,7 +192,7 @@ else:
                 if b['tahun_pelaksanaan'] == tahun_pelaksanaan
             ]
             
-                        if buku_ditemukan:
+            if buku_ditemukan:
                 df = pd.DataFrame(buku_ditemukan)
                 df['No'] = range(1, len(df) + 1)
                 df = df.rename(columns={  

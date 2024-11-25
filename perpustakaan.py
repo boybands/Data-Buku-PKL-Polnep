@@ -192,28 +192,33 @@ else:
                 if b['tahun_pelaksanaan'] == tahun_pelaksanaan
             ]
             
-            if buku_ditemukan:
+                        if buku_ditemukan:
                 df = pd.DataFrame(buku_ditemukan)
-                df['No'] = range(1, len(df) + 1)  # Menambah kolom No
-                df = df.rename(columns={ 
-                    'letak_buku_pkl': 'Letak Buku PKL', 
+                df['No'] = range(1, len(df) + 1)
+                df = df.rename(columns={  
+                    'letak_buku_pkl': 'Letak Buku PKL',
                     'arsip_laporan_pkl': 'Arsip Laporan PKL', 
                     'tahun_pelaksanaan': 'Tahun Pelaksanaan', 
                     'nim': 'NIM', 
                     'nama_mahasiswa': 'Nama Mahasiswa', 
                     'judul_laporan_pkl': 'Judul Laporan PKL', 
-                    'nama_dosen_pembimbing': 'Nama Dosen Pembimbing', 
-                    'nama_tempat_pelaksanaan': 'Nama Tempat Pelaksanaan', 
+                    'nama_dosen_pembimbing': 'Nama Dosen Pembimbing',  
                     'kabupaten_kota': 'Kabupaten/Kota' 
                 })
-                df = df[['No', 'Letak Buku PKL', 'Arsip Laporan PKL', 'Tahun Pelaksanaan', 'NIM', 
-                         'Nama Mahasiswa', 'Judul Laporan PKL', 'Nama Dosen Pembimbing', 
-                         'Nama Tempat Pelaksanaan', 'Kabupaten/Kota']]
-                st.write("**Daftar Buku PKL:**")
-                st.write(df.to_html(index=False), unsafe_allow_html=True)
+                
+                # Pastikan semua kolom yang ingin diakses ada
+                required_columns = ['No', 'Letak Buku PKL', 'Arsip Laporan PKL', 'Tahun Pelaksanaan', 'NIM', 'Nama Mahasiswa', 'Judul Laporan PKL', 'Nama Dosen Pembimbing', 'Kabupaten/Kota']
+                missing_columns = [col for col in required_columns if col not in df.columns]
+                
+                if missing_columns:
+                    st.error(f"Kolom berikut tidak ditemukan: {', '.join(missing_columns)}")
+                else:
+                    df = df[required_columns]
+                    st.write("**Daftar Buku PKL:**")
+                    st.write(df.to_html(index=False), unsafe_allow_html=True)
             else:
                 st.warning("Tidak ada buku yang ditemukan untuk kategori dan tahun tersebut.")
-    
+            
     elif pilihan_fitur == "Tambah Buku" and st.session_state.role == "admin":
         # Hanya admin yang dapat menambah buku
         kategori_baru = st.selectbox("Pilih Kategori Buku", list(data_perpustakaan.keys()))

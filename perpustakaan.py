@@ -192,7 +192,7 @@ else:
                 if b['tahun_pelaksanaan'] == tahun_pelaksanaan
             ]
             
-            if buku_ditemukan:
+             if buku_ditemukan:
                 df = pd.DataFrame(buku_ditemukan)
                 df['No'] = range(1, len(df) + 1)
                 df = df.rename(columns={  
@@ -207,19 +207,20 @@ else:
                 })
                 
                 # Pastikan semua kolom yang ingin diakses ada
-                required_columns = ['No', 'Letak Buku PKL', 'Arsip Laporan PKL', 'Tahun Pelaksanaan', 'NIM', 'Nama Mahasiswa', 'Judul Laporan PKL', 'Nama Dosen Pembimbing', 'Kabupaten/Kota']
+                required_columns = ['No', 'Arsip Laporan PKL', 'Tahun Pelaksanaan', 'NIM', 'Nama Mahasiswa', 'Judul Laporan PKL', 'Nama Dosen Pembimbing', 'Kabupaten/Kota']
                 missing_columns = [col for col in required_columns if col not in df.columns]
                 
                 if missing_columns:
                     st.error(f"Kolom berikut tidak ditemukan: {', '.join(missing_columns)}")
                 else:
                     df = df[required_columns]
-                    st.write("**Daftar Buku PKL:**")
+                    st.write("*Daftar Buku PKL:*")
                     st.write(df.to_html(index=False), unsafe_allow_html=True)
             else:
                 st.warning("Tidak ada buku yang ditemukan untuk kategori dan tahun tersebut.")
             
     elif pilihan_fitur == "Tambah Buku" and st.session_state.role == "admin":
+        
         # Hanya admin yang dapat menambah buku
         kategori_baru = st.selectbox("Pilih Kategori Buku", list(data_perpustakaan.keys()))
         
@@ -257,11 +258,12 @@ else:
                 else:
                     # Data valid, simpan buku baru
                     buku_baru = {
-                        'judul_laporan_pkl': judul.strip(),
+                        'letak_buku_pkl': letak.strip(),
                         'arsip_laporan_pkl': arsip.strip(),
                         'tahun_pelaksanaan': tahun,
                         'nim': nim.strip(),
                         'nama_mahasiswa': nama_mahasiswa.strip(),
+                        'judul_laporan_pkl': judul.strip(),
                         'nama_dosen_pembimbing': dosen_pembimbing.strip(),
                         'kabupaten_kota': kabupaten_kota.strip()
                     }
